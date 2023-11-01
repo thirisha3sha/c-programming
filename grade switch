@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+	int mark;
+	char sub[1000],grade;
+	printf("enter the subject name:");
+	gets(sub);
+	printf("\nenter the mark:");
+	scanf("%d",&mark);
+	printf("subject:%s",sub);
+	switch(mark/10){
+		case 10:
+	    case 9:
+	    	printf("\n A GRADE");
+	    	break;
+	    case 8:
+	    	printf("\n B GRADE");
+	    	break;
+	    case 7:
+	    case 6:
+	    	printf("\n C GRADE");
+	    	break;
+	    case 5:
+	    case 4:
+	    	printf("\n D GRADE");
+	    	break;
+	    case 3:
+	    case 2:
+	    case 1:
+	    case 0:
+	    
+	    	printf("\n FAIL");
+	    	break;
+	    default:
+	    	printf("\ninvalid input");
+	    	break;
+	    	
+	}
+	return 0;
+}
