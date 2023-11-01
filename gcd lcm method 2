@@ -1,0 +1,23 @@
+//gcd lcm
+#include<stdio.h>
+int main()
+{
+	int n1,n2,gcd,lcm,remainder,numerator,denominator;
+	printf("enter the num1:");
+	scanf("%d",&n1);
+	printf("\nenter the num2:");
+	scanf("%d",&n2);
+	numerator=(n1>n2)?n1:n2;
+	denominator=(n1<n2)?n1:n2;
+	remainder=numerator % denominator;
+	while(remainder!=0)
+	{
+		numerator=denominator;
+		denominator=remainder;
+		remainder=numerator % denominator;
+	}
+	gcd=denominator;
+	lcm=n1*n2/gcd;
+	printf("\ngcd:%d",gcd);
+	printf("\nlcm:%d",lcm);
+	}
