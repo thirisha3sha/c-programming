@@ -1,0 +1,21 @@
+#include<stdio.h>
+int gcd(int n1,int n2);
+int main()
+{
+	int n1,n2,lcm,result;
+	printf("enter two integers value:");
+	scanf("%d %d ",&n1,&n2);
+	result=gcd(n1,n2);
+	printf("GCD:%d",result);
+	printf("\nLCM:%d",(n1*n2/result));
+}
+int gcd(int n1,int n2)
+{
+	if(n2==0)
+	{
+		return n1;
+	}
+	else{
+		return gcd(n2,n1%n2);
+	}
+}
