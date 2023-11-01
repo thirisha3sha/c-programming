@@ -1,0 +1,20 @@
+//greatest number
+#include <stdio.h>
+
+int main() {
+    int x,y;
+    printf("enter the value of x");
+    scanf("%d",&x);
+    printf("\n enter the value of y:");
+    scanf("%d",&y);
+    if(x==y){
+        printf("both are equal");
+    }
+    else if(x>y){
+        printf("%d is the gretaest number",x);
+    }
+    else
+        printf("%d is the greatest number",y);
+
+    return 0;
+}
