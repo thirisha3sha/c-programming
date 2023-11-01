@@ -1,0 +1,12 @@
+//fahrenheit to celsius
+#include<stdio.h>
+float convert(float fahrenheit){
+	return ((fahrenheit-32)/1.8);
+}
+int main(){
+	float fahrenheit;
+	printf("enter the temperature in fahrenheit:");
+	scanf("%f",&fahrenheit);
+	printf("\ncelsius=%f",convert(fahrenheit));
+	return 0;
+}
