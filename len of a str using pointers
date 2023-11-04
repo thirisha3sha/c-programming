@@ -1,0 +1,18 @@
+//to find the length of the string using pointer
+#include<stdio.h>
+int main()
+{
+	char s[1000],*ptr;
+	int count=0;
+	printf("enter the string:");
+	gets(s);
+	ptr=s;
+	while(*ptr !='\0')
+	{
+		count=count+1;
+		ptr++;
+   }
+   printf("length of the string:%d",count);
+   return 0;
+	
+}
